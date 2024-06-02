@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/theme_layouts"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="CLASS ATTENDANCE"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="24dp"
+            android:fontFamily="@font/aller_bold"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+
+        <com.example.attendancesystem.CustomProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="222dp"
+            android:layout_height="222dp"
+            android:layout_gravity="center_horizontal"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/aller_bold"
+            android:text="xxxxCourse_infoxxxx"
+            android:textAlignment="center"
+            android:textColor="@color/grey2"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_green"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:alpha="0.75"
+        android:background="@drawable/green_button"
+        android:fontFamily="@font/aller_bold"
+        android:text="Attended"
+        android:textAlignment="center"
+        android:textColor="#353434"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+    <Button
+        android:id="@+id/button_red"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.75"
+        android:background="@drawable/red_button"
+        android:fontFamily="@font/aller_bold"
+        android:text="Not Attended"
+        android:textAlignment="center"
+        android:textColor="#353434"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_green" />
+
+    <LinearLayout
+        android:id="@+id/report"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/white_button"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_red">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/report"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="CREATE REPORT"
+            android:textAlignment="center"
+            android:fontFamily="@font/aller_bold"
+            android:textColor="@color/grey"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/per"
+        android:layout_width="86dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/aller_bold"
+        android:text="0%"
+        android:textAlignment="center"
+        android:textColor="@color/grey2"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

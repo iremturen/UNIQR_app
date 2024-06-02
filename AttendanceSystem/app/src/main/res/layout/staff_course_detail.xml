@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="412dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="-16dp"
+        android:background="@drawable/theme_layouts"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/aller_bold"
+            android:text="COURSE DETAIL"
+            android:textColor="@color/blue"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/blue"
+            android:fontFamily="@font/aller_bold"
+            android:textColor="@color/blue"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detail_course_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/aller_bold"
+            android:text="xxxxxGradution project xxxxxx"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detail_course_code"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/aller_bold"
+            android:text="xxxxxSE491xxxxx"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aller"
+                android:text="Lesson Duration:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"></TextView>
+            <TextView
+                android:id="@+id/detail_course_total_time"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aller"
+                android:text="90"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="451dp"
+        android:layout_height="246dp"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.122">
+
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="112dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/course_info"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/time"></ImageView>
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Time:"
+                    android:fontFamily="@font/aller"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detail_course_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="xxx16.00 - 18:00xxxx"
+                    android:fontFamily="@font/aller"
+                    android:textColor="@color/grey"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/class_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Classroom:"
+                    android:fontFamily="@font/aller"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/detail_course_classroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/aller"
+                    android:text="xxxxxxCentral A Block 3rd Floor 303xxxxx"
+                    android:textColor="@color/grey"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="406dp"
+        android:layout_height="164dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginBottom="125dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/sessions"
+            android:layout_width="239dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_page_buttons">
+
+            <TextView
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/aller"
+                android:text="Sessions"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/generate_qr"
+            android:layout_width="239dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_page_buttons"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/aller"
+                android:text="Create Session"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="130dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="140dp"
+        android:background="@drawable/homepage_layouts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/homepage"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/homepage_icon"></ImageView>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="-4dp"
+                android:fontFamily="@font/aller"
+                android:text="Homepage"
+                android:textColor="@color/grey2"
+                android:textSize="12dp"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

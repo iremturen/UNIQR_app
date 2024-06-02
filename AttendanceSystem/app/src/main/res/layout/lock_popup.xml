@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <LinearLayout
+        android:layout_width="348dp"
+        android:layout_height="245dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <ImageView
+            android:id="@+id/close_popup"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:padding="3dp"
+            android:layout_marginLeft="280dp"
+            android:src="@drawable/close"></ImageView>
+        <EditText
+            android:id="@+id/staff_id_noneditable"
+            android:layout_width="250dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/petrov_regular"
+            android:inputType="number"
+            android:maxLength="9"
+            android:paddingLeft="25dp"
+            android:text="xxxxx"
+            android:textColor="@color/grey"
+            android:textSize="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/staff_pass"
+            android:layout_width="250dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="23dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/petrov_regular"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:paddingLeft="25dp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey2"
+            android:textSize="16dp"></EditText>
+
+        <LinearLayout
+            android:id="@+id/unlock"
+            android:layout_width="139dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="83dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/unlocked"
+            android:fontFamily="@font/petrov_regular"
+            android:inputType="textPassword"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:textColor="@color/grey"
+            android:textSize="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/unlock"></ImageView>
+            <TextView
+                android:layout_width="51dp"
+                android:text="unlock"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/grey2"
+                android:layout_marginTop="8dp"
+                android:layout_height="20dp"></TextView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

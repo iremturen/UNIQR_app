@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StaffLogin"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="231dp"
+        android:layout_height="42dp"
+        android:text="Staff Sign In"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/aller_bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806"></TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="352dp"
+        android:layout_height="334dp"
+        android:background="@drawable/login_layouts"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466">
+
+        >
+
+        <EditText
+            android:id="@+id/editText_id"
+            android:layout_width="300dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/edit_text"
+            android:hint="Staff ID"
+            android:inputType="number"
+            android:maxLength="9"
+            android:paddingLeft="25dp"
+            android:fontFamily="@font/aller_bold"
+            android:textColorHint="@color/grey2"></EditText>
+
+        <EditText
+            android:id="@+id/staff_pass"
+            android:layout_width="300dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="25dp"
+            android:fontFamily="@font/aller_bold"
+            android:textColorHint="@color/grey2"></EditText>
+
+        <Button
+            android:id="@+id/staff_login_btn"
+            android:layout_width="300dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_buttons"
+            android:text="Sign In"
+            android:fontFamily="@font/aller_bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"></Button>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="418dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/k4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="1.0"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
